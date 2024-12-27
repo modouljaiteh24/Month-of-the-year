@@ -8,6 +8,19 @@ body {
   min-height: 100vh;
 }
 
+body {
+  color: black;
+}
+
+.dark-mode {
+  background-color: black;
+  color: white;
+}
+
+.toggle {
+  text-align: center;
+}
+
 /* Container Styling */
 .container {
   width: 90%;

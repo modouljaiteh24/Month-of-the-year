@@ -4,6 +4,12 @@ function checkMonth() {
   //   let monthMessage = document.getElementById("message");
   let monthNumber = parseInt(document.getElementById("search").value, 10);
   let monthMessage = document.getElementById("monthMessage");
+  const button = document.getElementById("toggle");
+  const content = document.getElementById("content");
+
+  button.addEventListener("click", () => {
+    content.classList.toggle("dark-mode");
+  });
 
   const months = [
     "January",
