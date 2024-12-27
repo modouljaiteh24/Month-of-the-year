@@ -4,7 +4,6 @@ function checkMonth() {
   //   let monthMessage = document.getElementById("message");
   let monthNumber = parseInt(document.getElementById("search").value, 10);
   let monthMessage = document.getElementById("monthMessage");
-  let invalid = document.getElementById("invalidMessage");
 
   const months = [
     "January",
@@ -19,6 +18,7 @@ function checkMonth() {
     "October",
     "November",
     "December",
+    "Please enter a valid number between 1 and 12",
   ];
 
   switch (monthNumber) {
