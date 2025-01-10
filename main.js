@@ -7,15 +7,15 @@ function checkMonth() {
   const button = document.getElementById("toggle");
   const content = document.getElementsByTagName("body")[0];
 
-  button.addEventListener("click", () => {
-    content.classList.toggle("dark-mode");
-    // if (content.classList.contains("dark-mode")) {
-    //   button.innerText = "white";
-    //   content.style.backgroundColor = "black";
-    // } else {
-    //   button.innerText = "black";
-    // }
-  });
+  // button.addEventListener("click", () => {
+  //   content.classList.toggle("dark-mode");
+  //   if (content.classList.contains("dark-mode")) {
+  //     button.innerText = "white";
+  //     content.style.backgroundColor = "black";
+  //   } else {
+  //     button.innerText = "black";
+  //   }
+  // });
 
   const months = [
     "January",
