@@ -5,10 +5,16 @@ function checkMonth() {
   let monthNumber = parseInt(document.getElementById("search").value, 10);
   let monthMessage = document.getElementById("monthMessage");
   const button = document.getElementById("toggle");
-  const content = document.getElementById("content");
+  const content = document.getElementsByTagName("body")[0];
 
   button.addEventListener("click", () => {
     content.classList.toggle("dark-mode");
+    // if (content.classList.contains("dark-mode")) {
+    //   button.innerText = "white";
+    //   content.style.backgroundColor = "black";
+    // } else {
+    //   button.innerText = "black";
+    // }
   });
 
   const months = [
@@ -68,3 +74,8 @@ function checkMonth() {
       monthMessage.innerText = months[12];
   }
 }
+
+// let div = document.createElement("div");
+
+// div.innerText = "<h1>Month of the Year</h1>";
+// document.body.appendChild(div);
