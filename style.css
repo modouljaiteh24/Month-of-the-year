@@ -1,29 +1,33 @@
 body {
   font-family: "Courier New", Courier, monospace;
   background-color: aliceblue;
+}
+
+#content {
   margin: 0;
   display: flex;
   justify-content: center;
   align-items: center;
   min-height: 100vh;
+  overflow: hidden;
 }
 
 body {
   color: black;
-  overflow: hidden;
 }
 
 .dark-mode {
-  background-color: black;
+  background-color: rgb(39, 37, 37);
   color: white;
 }
 
 .toggle {
   text-align: center;
   display: flex;
-  justify-content: center;
+  justify-content: end;
   align-items: center;
   margin-bottom: 1rem;
+  margin-top: 1rem;
 }
 
 /* Container Styling */
@@ -72,7 +76,7 @@ input {
 }
 
 /* Button Styling */
-button {
+#check {
   padding: 10px 20px;
   font-size: 1rem;
   background-color: #4caf50;
@@ -83,7 +87,7 @@ button {
   transition: background-color 0.3s;
 }
 
-button:hover {
+#check:hover {
   background-color: #0f6e12;
 }
 
@@ -140,7 +144,7 @@ button:hover {
     margin-bottom: 10px;
   }
 
-  button {
+  #check {
     padding: 10px 20px;
     font-size: 1rem;
     background-color: #4caf50;
@@ -151,7 +155,7 @@ button:hover {
     transition: background-color 0.3s;
   }
 
-  button:hover {
+  #check:hover {
     background-color: #0f6e12;
   }
 }
@@ -177,7 +181,7 @@ button:hover {
     padding: 8px;
   }
 
-  button {
+  #check {
     font-size: 0.9rem;
     padding: 8px 15px;
   }

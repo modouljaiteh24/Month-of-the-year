@@ -6,28 +6,30 @@
     <title>Document</title>
     <link rel="stylesheet" href="style.css" />
   </head>
-  <body id="content">
-    <div>
-      <!-- <div class="toggle">
-        <button id="toggle">black</button>
-      </div> -->
-      <div class="container">
-        <h1>Month of the year</h1>
-        <!-- <p>This is a simple project that will display the month of the year.</p> -->
+  <body id="">
+    <div class="toggle">
+      <button id="toggle">Toggle Dark Mode</button>
+    </div>
+    <div id="content">
+      <div>
+        <div class="container">
+          <h1>Month of the year</h1>
+          <!-- <p>This is a simple project that will display the month of the year.</p> -->
 
-        <input
-          type="number"
-          id="search"
-          placeholder="Enter a number between 1 and 12"
-          min="1"
-          max="12"
-        />
-        <button onclick="checkMonth()">Check Month</button>
+          <input
+            type="number"
+            id="search"
+            placeholder="Enter a number between 1 and 12"
+            min="1"
+            max="12"
+          />
+          <button id="check" onclick="checkMonth()">Check Month</button>
 
-        <p id="monthMessage"></p>
-        <!-- <p id="invalidMessage"></p> -->
+          <p id="monthMessage"></p>
+          <!-- <p id="invalidMessage"></p> -->
+        </div>
+        <script src="main.js"></script>
       </div>
-      <script src="main.js"></script>
     </div>
   </body>
 </html>
